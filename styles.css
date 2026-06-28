@@ -341,22 +341,19 @@ h3 {
   place-items: center;
   min-height: 520px;
   aspect-ratio: 4 / 5;
-  background:
-    linear-gradient(160deg, rgba(32, 33, 31, 0.12), rgba(32, 33, 31, 0.02)),
-    radial-gradient(circle at 72% 22%, rgba(168, 138, 69, 0.24), rgba(168, 138, 69, 0) 32%),
-    linear-gradient(145deg, var(--night), #34352f);
-  border: 1px solid rgba(32, 33, 31, 0.12);
-  border-radius: 8px;
-  box-shadow: var(--shadow);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .founder-photo img {
-  width: min(72%, 310px);
+  width: min(82%, 330px);
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 999px;
-  border: 8px solid rgba(246, 244, 239, 0.88);
-  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
+  border: 8px solid #fff;
+  box-shadow: 0 24px 64px rgba(32, 33, 31, 0.16);
 }
 
 .founder-copy > p:not(.eyebrow) {
