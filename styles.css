@@ -1,17 +1,17 @@
 :root {
-  --ink: #1f1a1f;
-  --night: #100c10;
-  --plum: #351828;
-  --muted: #6d6470;
-  --paper: #f7f4f7;
+  --ink: #20211f;
+  --night: #171816;
+  --plum: #3d2528;
+  --muted: #646862;
+  --paper: #f6f4ef;
   --surface: #ffffff;
-  --dragon: #c7195d;
-  --dragon-deep: #8f1745;
-  --pitaya: #e45385;
-  --accent: #b89a55;
-  --teal: #0f5961;
-  --line: rgba(18, 13, 18, 0.13);
-  --shadow: 0 24px 70px rgba(40, 8, 30, 0.12);
+  --dragon: #7c2f3a;
+  --dragon-deep: #5d2530;
+  --pitaya: #9f4d5a;
+  --accent: #a88a45;
+  --sage: #66705c;
+  --line: rgba(32, 33, 31, 0.13);
+  --shadow: 0 24px 70px rgba(32, 33, 31, 0.12);
 }
 
 * {
@@ -52,7 +52,7 @@ a {
   min-height: 72px;
   padding: 14px clamp(18px, 4vw, 56px);
   color: var(--ink);
-  background: rgba(247, 244, 247, 0.84);
+  background: rgba(246, 244, 239, 0.86);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(31, 26, 31, 0.1);
   transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
@@ -60,7 +60,7 @@ a {
 
 .site-header.is-scrolled {
   color: var(--ink);
-  background: rgba(247, 244, 247, 0.96);
+  background: rgba(246, 244, 239, 0.96);
   border-color: var(--line);
 }
 
@@ -99,7 +99,7 @@ a {
 }
 
 .emblem-cut {
-  fill: var(--dragon);
+  fill: var(--accent);
 }
 
 .brand-wordmark {
@@ -198,9 +198,9 @@ a {
 .hero-overlay {
   z-index: -1;
   background:
-    radial-gradient(circle at 75% 18%, rgba(199, 25, 93, 0.16) 0%, rgba(199, 25, 93, 0) 30%),
-    linear-gradient(90deg, rgba(247, 244, 247, 0.96) 0%, rgba(247, 244, 247, 0.82) 48%, rgba(247, 244, 247, 0.2) 100%),
-    linear-gradient(0deg, rgba(247, 244, 247, 0.86) 0%, rgba(247, 244, 247, 0) 38%);
+    radial-gradient(circle at 73% 22%, rgba(102, 112, 92, 0.18) 0%, rgba(102, 112, 92, 0) 34%),
+    linear-gradient(90deg, rgba(246, 244, 239, 0.97) 0%, rgba(246, 244, 239, 0.85) 45%, rgba(246, 244, 239, 0.2) 100%),
+    linear-gradient(0deg, rgba(246, 244, 239, 0.88) 0%, rgba(246, 244, 239, 0) 40%);
 }
 
 .hero-content {
@@ -211,7 +211,7 @@ a {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--dragon);
+  color: var(--dragon-deep);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -219,7 +219,7 @@ a {
 }
 
 .hero .eyebrow {
-  color: var(--dragon-deep);
+  color: var(--sage);
 }
 
 h1,
@@ -286,15 +286,15 @@ h3 {
 
 .button.primary {
   color: #fff;
-  background: var(--plum);
-  border-color: rgba(53, 24, 40, 0.18);
-  box-shadow: 0 14px 34px rgba(53, 24, 40, 0.2);
+  background: var(--ink);
+  border-color: rgba(32, 33, 31, 0.18);
+  box-shadow: 0 14px 34px rgba(32, 33, 31, 0.18);
 }
 
 .button.secondary {
-  color: var(--plum);
+  color: var(--ink);
   background: rgba(255, 255, 255, 0.62);
-  border-color: rgba(53, 24, 40, 0.24);
+  border-color: rgba(32, 33, 31, 0.22);
 }
 
 .section,
@@ -351,13 +351,13 @@ h3 {
   position: absolute;
   inset: 0 0 auto;
   height: 4px;
-  background: linear-gradient(90deg, var(--dragon), var(--accent));
+  background: linear-gradient(90deg, var(--sage), var(--accent));
 }
 
 .card-index {
   display: block;
   margin-bottom: 56px;
-  color: var(--dragon-deep);
+  color: var(--sage);
   font-weight: 800;
 }
 
@@ -385,7 +385,7 @@ h3 {
 }
 
 .timeline-date {
-  color: var(--dragon-deep);
+  color: var(--sage);
   font-weight: 800;
 }
 
@@ -401,8 +401,8 @@ h3 {
 .timeline li {
   padding: 8px 10px;
   color: var(--plum);
-  background: rgba(199, 25, 93, 0.07);
-  border: 1px solid rgba(199, 25, 93, 0.14);
+  background: rgba(102, 112, 92, 0.08);
+  border: 1px solid rgba(102, 112, 92, 0.16);
   border-radius: 8px;
   font-size: 0.88rem;
   font-weight: 700;
@@ -439,9 +439,9 @@ h3 {
   padding: clamp(32px, 5vw, 58px);
   color: #fff;
   background:
-    radial-gradient(circle at 86% 18%, rgba(199, 25, 93, 0.26), rgba(199, 25, 93, 0) 31%),
-    linear-gradient(135deg, var(--night), #22101c 58%, #351828);
-  border: 1px solid rgba(199, 25, 93, 0.18);
+    radial-gradient(circle at 86% 18%, rgba(168, 138, 69, 0.28), rgba(168, 138, 69, 0) 31%),
+    linear-gradient(135deg, var(--night), #252620 58%, #3d2528);
+  border: 1px solid rgba(168, 138, 69, 0.22);
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
@@ -452,7 +452,7 @@ h3 {
   inset: 18px auto auto 18px;
   width: 86px;
   height: 3px;
-  background: linear-gradient(90deg, var(--dragon), var(--accent));
+  background: linear-gradient(90deg, var(--sage), var(--accent));
 }
 
 .contact-copy {
@@ -518,8 +518,8 @@ h3 {
 
 .contact-link:hover {
   transform: translateY(-2px);
-  background: rgba(199, 25, 93, 0.18);
-  border-color: rgba(199, 25, 93, 0.44);
+  background: rgba(168, 138, 69, 0.16);
+  border-color: rgba(168, 138, 69, 0.42);
 }
 
 .contact-icon {
@@ -625,9 +625,9 @@ h3 {
 
   .hero-overlay {
     background:
-      radial-gradient(circle at 75% 20%, rgba(199, 25, 93, 0.18) 0%, rgba(199, 25, 93, 0) 30%),
-      linear-gradient(90deg, rgba(247, 244, 247, 0.97) 0%, rgba(247, 244, 247, 0.86) 68%, rgba(247, 244, 247, 0.55) 100%),
-      linear-gradient(0deg, rgba(247, 244, 247, 0.9) 0%, rgba(247, 244, 247, 0) 45%);
+      radial-gradient(circle at 75% 20%, rgba(102, 112, 92, 0.18) 0%, rgba(102, 112, 92, 0) 30%),
+      linear-gradient(90deg, rgba(246, 244, 239, 0.98) 0%, rgba(246, 244, 239, 0.9) 68%, rgba(246, 244, 239, 0.62) 100%),
+      linear-gradient(0deg, rgba(246, 244, 239, 0.92) 0%, rgba(246, 244, 239, 0) 45%);
   }
 
   .hero-content {
