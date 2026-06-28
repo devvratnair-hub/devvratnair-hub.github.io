@@ -1,17 +1,17 @@
 :root {
-  --ink: #120d12;
-  --night: #09070a;
-  --plum: #29101f;
-  --muted: #6f626c;
-  --paper: #fff7fb;
+  --ink: #1f1a1f;
+  --night: #100c10;
+  --plum: #351828;
+  --muted: #6d6470;
+  --paper: #f7f4f7;
   --surface: #ffffff;
-  --dragon: #f02d72;
-  --dragon-deep: #b90f4f;
-  --pitaya: #ff6f9f;
-  --acid: #d8ff3e;
-  --teal: #0d6970;
+  --dragon: #c7195d;
+  --dragon-deep: #8f1745;
+  --pitaya: #e45385;
+  --accent: #b89a55;
+  --teal: #0f5961;
   --line: rgba(18, 13, 18, 0.13);
-  --shadow: 0 24px 70px rgba(40, 8, 30, 0.18);
+  --shadow: 0 24px 70px rgba(40, 8, 30, 0.12);
 }
 
 * {
@@ -51,16 +51,16 @@ a {
   justify-content: space-between;
   min-height: 72px;
   padding: 14px clamp(18px, 4vw, 56px);
-  color: #fff;
-  background: rgba(9, 7, 10, 0.38);
+  color: var(--ink);
+  background: rgba(247, 244, 247, 0.84);
   backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(31, 26, 31, 0.1);
   transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
 .site-header.is-scrolled {
   color: var(--ink);
-  background: rgba(255, 247, 251, 0.94);
+  background: rgba(247, 244, 247, 0.96);
   border-color: var(--line);
 }
 
@@ -144,7 +144,7 @@ a {
 .site-nav a:hover,
 .site-nav a.is-active {
   opacity: 1;
-  color: var(--acid);
+  color: var(--dragon-deep);
 }
 
 .site-header.is-scrolled .site-nav a:hover,
@@ -173,11 +173,11 @@ a {
 
 .hero {
   position: relative;
-  min-height: 88svh;
+  min-height: 82svh;
   display: grid;
   align-items: end;
   overflow: hidden;
-  color: #fff;
+  color: var(--ink);
   isolation: isolate;
 }
 
@@ -198,9 +198,9 @@ a {
 .hero-overlay {
   z-index: -1;
   background:
-    radial-gradient(circle at 78% 24%, rgba(240, 45, 114, 0.38) 0%, rgba(240, 45, 114, 0) 28%),
-    linear-gradient(90deg, rgba(9, 7, 10, 0.94) 0%, rgba(28, 10, 22, 0.78) 46%, rgba(9, 7, 10, 0.18) 100%),
-    linear-gradient(0deg, rgba(9, 7, 10, 0.72) 0%, rgba(9, 7, 10, 0) 42%);
+    radial-gradient(circle at 75% 18%, rgba(199, 25, 93, 0.16) 0%, rgba(199, 25, 93, 0) 30%),
+    linear-gradient(90deg, rgba(247, 244, 247, 0.96) 0%, rgba(247, 244, 247, 0.82) 48%, rgba(247, 244, 247, 0.2) 100%),
+    linear-gradient(0deg, rgba(247, 244, 247, 0.86) 0%, rgba(247, 244, 247, 0) 38%);
 }
 
 .hero-content {
@@ -219,7 +219,7 @@ a {
 }
 
 .hero .eyebrow {
-  color: var(--acid);
+  color: var(--dragon-deep);
 }
 
 h1,
@@ -230,17 +230,17 @@ p {
 }
 
 h1 {
-  max-width: 800px;
+  max-width: 840px;
   margin: 0;
-  font-family: "Space Grotesk", Arial, sans-serif;
-  font-size: clamp(3.6rem, 8.4vw, 7.4rem);
-  line-height: 0.9;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3.1rem, 6.9vw, 6.35rem);
+  line-height: 0.94;
   letter-spacing: 0;
 }
 
 h2 {
   margin: 0;
-  font-family: "Space Grotesk", Arial, sans-serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: clamp(2rem, 4vw, 3.4rem);
   line-height: 0.98;
   letter-spacing: 0;
@@ -254,9 +254,9 @@ h3 {
 }
 
 .hero-copy {
-  max-width: 650px;
+  max-width: 620px;
   margin: 20px 0 0;
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--muted);
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
@@ -286,15 +286,15 @@ h3 {
 
 .button.primary {
   color: #fff;
-  background: var(--dragon);
-  border-color: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 14px 34px rgba(240, 45, 114, 0.32);
+  background: var(--plum);
+  border-color: rgba(53, 24, 40, 0.18);
+  box-shadow: 0 14px 34px rgba(53, 24, 40, 0.2);
 }
 
 .button.secondary {
-  color: currentColor;
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.38);
+  color: var(--plum);
+  background: rgba(255, 255, 255, 0.62);
+  border-color: rgba(53, 24, 40, 0.24);
 }
 
 .section,
@@ -343,7 +343,7 @@ h3 {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 12px 30px rgba(40, 8, 30, 0.07);
+  box-shadow: 0 12px 30px rgba(40, 8, 30, 0.05);
 }
 
 .card::before {
@@ -351,7 +351,7 @@ h3 {
   position: absolute;
   inset: 0 0 auto;
   height: 4px;
-  background: linear-gradient(90deg, var(--dragon), var(--acid));
+  background: linear-gradient(90deg, var(--dragon), var(--accent));
 }
 
 .card-index {
@@ -401,8 +401,8 @@ h3 {
 .timeline li {
   padding: 8px 10px;
   color: var(--plum);
-  background: rgba(240, 45, 114, 0.08);
-  border: 1px solid rgba(240, 45, 114, 0.16);
+  background: rgba(199, 25, 93, 0.07);
+  border: 1px solid rgba(199, 25, 93, 0.14);
   border-radius: 8px;
   font-size: 0.88rem;
   font-weight: 700;
@@ -426,7 +426,7 @@ h3 {
 .principles div {
   padding: 26px;
   background: #fff;
-  border-left: 5px solid var(--dragon);
+  border-left: 5px solid var(--accent);
 }
 
 .contact-panel {
@@ -439,9 +439,9 @@ h3 {
   padding: clamp(32px, 5vw, 58px);
   color: #fff;
   background:
-    radial-gradient(circle at 86% 18%, rgba(240, 45, 114, 0.34), rgba(240, 45, 114, 0) 31%),
-    linear-gradient(135deg, var(--night), #22101c 58%, #3b1029);
-  border: 1px solid rgba(240, 45, 114, 0.18);
+    radial-gradient(circle at 86% 18%, rgba(199, 25, 93, 0.26), rgba(199, 25, 93, 0) 31%),
+    linear-gradient(135deg, var(--night), #22101c 58%, #351828);
+  border: 1px solid rgba(199, 25, 93, 0.18);
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
@@ -452,7 +452,7 @@ h3 {
   inset: 18px auto auto 18px;
   width: 86px;
   height: 3px;
-  background: linear-gradient(90deg, var(--dragon), var(--acid));
+  background: linear-gradient(90deg, var(--dragon), var(--accent));
 }
 
 .contact-copy {
@@ -460,7 +460,7 @@ h3 {
 }
 
 .contact-panel .eyebrow {
-  color: var(--acid);
+  color: #e8d094;
 }
 
 .contact-panel h2 {
@@ -518,8 +518,8 @@ h3 {
 
 .contact-link:hover {
   transform: translateY(-2px);
-  background: rgba(240, 45, 114, 0.18);
-  border-color: rgba(240, 45, 114, 0.44);
+  background: rgba(199, 25, 93, 0.18);
+  border-color: rgba(199, 25, 93, 0.44);
 }
 
 .contact-icon {
@@ -528,7 +528,7 @@ h3 {
   width: 44px;
   height: 44px;
   color: var(--night);
-  background: linear-gradient(135deg, var(--acid), #fff);
+  background: linear-gradient(135deg, #e8d094, #fff);
   border-radius: 8px;
   font-family: "Space Grotesk", Arial, sans-serif;
   font-size: 1rem;
@@ -539,7 +539,7 @@ h3 {
 .contact-card small {
   display: block;
   margin-bottom: 3px;
-  color: var(--acid);
+  color: #e8d094;
   font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -625,9 +625,9 @@ h3 {
 
   .hero-overlay {
     background:
-      radial-gradient(circle at 75% 20%, rgba(240, 45, 114, 0.32) 0%, rgba(240, 45, 114, 0) 30%),
-      linear-gradient(90deg, rgba(9, 7, 10, 0.95) 0%, rgba(28, 10, 22, 0.82) 67%, rgba(9, 7, 10, 0.42) 100%),
-      linear-gradient(0deg, rgba(9, 7, 10, 0.78) 0%, rgba(9, 7, 10, 0) 45%);
+      radial-gradient(circle at 75% 20%, rgba(199, 25, 93, 0.18) 0%, rgba(199, 25, 93, 0) 30%),
+      linear-gradient(90deg, rgba(247, 244, 247, 0.97) 0%, rgba(247, 244, 247, 0.86) 68%, rgba(247, 244, 247, 0.55) 100%),
+      linear-gradient(0deg, rgba(247, 244, 247, 0.9) 0%, rgba(247, 244, 247, 0) 45%);
   }
 
   .hero-content {
@@ -636,8 +636,8 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(3.15rem, 16vw, 4.3rem);
-    line-height: 0.9;
+    font-size: clamp(2.65rem, 12.5vw, 4rem);
+    line-height: 0.95;
   }
 
   .service-grid,
