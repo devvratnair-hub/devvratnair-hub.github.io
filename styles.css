@@ -585,6 +585,11 @@ h3 {
   border-color: rgba(168, 138, 69, 0.42);
 }
 
+.booking-link {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(232, 208, 148, 0.38);
+}
+
 .contact-icon {
   display: inline-grid;
   place-items: center;
