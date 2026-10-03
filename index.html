@@ -8,6 +8,8 @@
       name="description"
       content="Dragonfruit Technologies provides HCM technology solution architecture and HRIS transformation consulting, led by Devvrat Nair, Principal Consultant | HCM Technology Solution Architect, with a specialization in Dayforce."
     >
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,22 +19,23 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#home">Skip to content</a>
     <header class="site-header" data-header>
       <a class="brand" href="#home" aria-label="Dragonfruit Technologies home">
         <span class="brand-emblem" aria-hidden="true">
-          <img src="assets/dragonfruit-technologies-facebook-profile-circular-premium-split.png" alt="">
+          <img src="assets/dragonfruit-logo.webp" width="160" height="160" alt="">
         </span>
         <span class="brand-wordmark">
           <strong>Dragonfruit</strong>
           <small>Technologies</small>
         </span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="site-nav" data-nav>
+      <nav class="site-nav" id="site-navigation" data-nav>
         <a href="#services">Services</a>
         <a href="#work">Work</a>
         <a href="#approach">Approach</a>
@@ -42,15 +45,15 @@
 
     <main id="home">
       <section class="hero" aria-label="Dragonfruit Technologies introduction">
-        <img class="hero-image" src="assets/consulting-hero.png" alt="Elegant consulting workspace with planning documents and subtle workflow lines">
+        <img class="hero-image" src="assets/consulting-hero.webp" width="1717" height="916" fetchpriority="high" alt="Elegant consulting workspace with planning documents and subtle workflow lines">
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <p class="eyebrow">Dragonfruit Technologies</p>
           <h1>HCM technology architecture for complex HR transformation.</h1>
           <p class="hero-copy">
-            Independent solution architecture and implementation strategy, specializing in Dayforce
-            and drawing on ADP Workforce Now experience across onboarding,
-            testing, governance, and the practical work that makes implementations stick.
+            Solution architecture and implementation strategy, with a core specialization in Dayforce
+            and delivery experience in ADP Workforce Now. Connecting people, processes, and systems
+            through clear design, governance, and end-to-end validation.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="#contact">Discuss a project</a>
@@ -66,21 +69,20 @@
             <h2>Solution architecture for complex HR technology work.</h2>
           </div>
           <p>
-            Dragonfruit Technologies is the public trade name for Devvrat Nair's independent
-            consulting practice, operated as sole-proprietor consulting rather than an incorporated
-            company. The practice brings solution architecture and implementation discipline to the spaces where HR,
-            operations, vendors, and technology teams meet.
+            Dragonfruit Technologies is Devvrat Nair's independent consulting practice.
+            It helps connect business requirements with HCM solution design, clear ownership,
+            and implementation decisions across HR, operations, vendors, and technology teams.
           </p>
         </div>
       </section>
 
-      <section class="status-note" aria-label="Business status">
+      <section class="status-note" aria-label="Architecture in practice">
         <div class="section-inner status-note-inner">
-          <span>Business status</span>
+          <span>Architecture in practice</span>
           <p>
-            Dragonfruit Technologies is presented as an independent consulting trade name for
-            Devvrat Nair's sole-proprietor practice. It is not represented as an incorporated
-            entity unless explicitly stated in future business documentation.
+            Connect requirements, module handoffs, approvals, and validation evidence.
+            Make design trade-offs visible, define clear ownership, and involve specialist
+            consultants where deeper module expertise is needed.
           </p>
         </div>
       </section>
@@ -88,16 +90,17 @@
       <section class="section founder-section" id="founder">
         <div class="section-inner founder-layout">
           <div class="founder-photo">
-            <img src="assets/devvrat-nair-founder-clean.png" alt="Devvrat Nair, Principal Consultant | HCM Technology Solution Architect">
+            <img src="assets/devvrat-nair.webp" width="308" height="308" loading="lazy" decoding="async" alt="Devvrat Nair, Principal Consultant | HCM Technology Solution Architect">
           </div>
           <div class="founder-copy">
             <p class="eyebrow">Principal Consultant | HCM Technology Solution Architect</p>
             <h2>Meet Devvrat Nair</h2>
             <p>
               Dragonfruit Technologies is led by Devvrat Nair, Principal Consultant | HCM Technology
-              Solution Architect, and operated as his independent sole-proprietor practice.
-              Devvrat brings 16+ years of techno-functional experience across HCM transformation, Dayforce,
-              ADP Workforce Now, recruitment, onboarding, payroll, testing, and implementation delivery.
+              Solution Architect. His experience spans HR operations, HRIS implementation,
+              and HCM transformation, with Dayforce as a core specialization and ADP Workforce Now
+              delivery experience. His approach connects requirements, workflow design, cross-module
+              dependencies, and testing evidence, working with module specialists where needed.
             </p>
             <div class="founder-principles" aria-label="Vision, mission, and objective">
               <article>
@@ -127,47 +130,47 @@
             <article class="card">
               <span class="card-index">01</span>
               <h3>Discovery & Requirements</h3>
-              <p>Translate business needs into clear scope, user stories, process maps, acceptance criteria, and implementation priorities.</p>
+              <p>Define scope, process maps, requirements, and acceptance criteria so business needs can be traced through design and validation.</p>
             </article>
             <article class="card">
               <span class="card-index">02</span>
               <h3>Solution Design & Workflows</h3>
-              <p>Design HCM workflows and guide configuration for hiring, onboarding, approvals, notifications, roles, permissions, and operational handoffs.</p>
+              <p>Develop workflow designs, approval sequences, ownership maps, and configuration recommendations across hiring, onboarding, and HR handoffs.</p>
             </article>
             <article class="card">
               <span class="card-index">03</span>
               <h3>Data & Integrations</h3>
-              <p>Coordinate data cleanup, migration readiness, field mapping, integration handoffs, and validation with technical teams.</p>
+              <p>Define data mappings, integration requirements, handoff responsibilities, and reconciliation checks with technical and module specialists.</p>
             </article>
             <article class="card">
               <span class="card-index">04</span>
               <h3>Testing & Readiness</h3>
-              <p>Plan UAT, test scenarios, defect tracking, readiness checklists, release coordination, and go-live preparation.</p>
+              <p>Build end-to-end test scenarios, trace acceptance criteria, prioritize defects, and assemble evidence for go-live readiness decisions.</p>
             </article>
             <article class="card">
               <span class="card-index">05</span>
               <h3>Change & Adoption</h3>
-              <p>Create practical training, stakeholder communications, support materials, and adoption routines for real users.</p>
+              <p>Create role-based guidance, training plans, stakeholder communications, and support materials that make new processes usable.</p>
             </article>
             <article class="card">
               <span class="card-index">06</span>
               <h3>Reporting & Stabilization</h3>
-              <p>Build status visibility, operational dashboards, post-go-live issue rhythms, and continuous improvement backlogs.</p>
+              <p>Define status reporting, operational measures, issue ownership, and improvement backlogs to support stable delivery after go-live.</p>
             </article>
             <article class="card">
               <span class="card-index">07</span>
-              <h3>Implementation Governance</h3>
-              <p>Maintain RAID logs, decision records, delivery cadence, dependency tracking, status reporting, and escalation paths.</p>
+              <h3>Architecture & Delivery Governance</h3>
+              <p>Document design decisions, risks, dependencies, scope changes, and escalation paths so delivery choices remain visible and accountable.</p>
             </article>
             <article class="card">
               <span class="card-index">08</span>
               <h3>Cutover & Hypercare</h3>
-              <p>Plan launch checklists, go-live communications, support ownership, issue triage, and early-life stabilization.</p>
+              <p>Develop cutover plans, readiness checkpoints, support ownership, and triage routines for a controlled transition into operations.</p>
             </article>
             <article class="card">
               <span class="card-index">09</span>
               <h3>Vendor & Stakeholder Coordination</h3>
-              <p>Align vendors, business teams, IT, security, data owners, and leadership around decisions, dependencies, and delivery progress.</p>
+              <p>Align business teams, vendors, IT, and module specialists around design reviews, responsibilities, dependencies, and delivery decisions.</p>
             </article>
           </div>
         </div>
@@ -181,24 +184,25 @@
             <p>
               The Dragonfruit Technologies consulting practice is built on practical delivery experience across HRIS,
               payroll, recruiting, onboarding, testing, governance, and post-go-live support.
-              The examples below are summarized as public-facing capability areas rather than a resume.
+              These examples describe experience and areas of contribution; module exposure does
+              not imply equal hands-on configuration depth across every area.
             </p>
           </div>
           <div class="timeline" aria-label="Professional history">
             <article class="timeline-item">
               <div class="timeline-date">Current focus</div>
               <div>
-                <h3>Enterprise recruitment and onboarding transformation</h3>
+                <h3>Recruiting, onboarding, and Core HR handoffs</h3>
                 <p>
-                  Supporting a large recruitment and onboarding transformation in a global consulting
-                  environment, with public-facing details intentionally sanitized. The work strengthens
-                  Dragonfruit's focus on implementation coordination, stakeholder alignment, and
-                  operational readiness.
+                  Work on complex Dayforce recruitment and onboarding processes includes clarifying
+                  approval sequences, employee acceptance, and handoffs to Core HR. The focus is on
+                  requirements traceability, practical controls, auditability, and end-to-end validation,
+                  with clear ownership between module teams. Client details remain confidential.
                 </p>
                 <ul>
-                  <li>Recruitment and onboarding delivery coordination</li>
-                  <li>Stakeholder alignment and implementation tracking</li>
-                  <li>Documentation, issue follow-up, and delivery communication</li>
+                  <li>Cross-module process design and ownership</li>
+                  <li>Approval dependencies, acceptance gates, and auditability</li>
+                  <li>Validation planning, client demonstrations, and design decisions</li>
                 </ul>
               </div>
             </article>
@@ -207,8 +211,8 @@
               <div>
                 <h3>Large-scale Dayforce implementation support</h3>
                 <p>
-                  Supported a major public-sector Dayforce implementation through a consulting
-                  engagement, spanning Core HR, Benefits, Payroll, Workforce Management, Recruiting,
+                  Contributed requirements validation, testing, and solution validation to a major
+                  public-sector Dayforce implementation, with exposure across Core HR, Benefits, Payroll, Workforce Management, Recruiting,
                   Onboarding, Performance Management, Succession Planning, and Reporting.
                 </p>
                 <ul>
@@ -318,6 +322,7 @@
               <span>Dayforce</span>
               <span>HRIS Transformation</span>
             </div>
+            <p class="chat-status" data-chat-status aria-live="polite">Email or booking are available for project enquiries.</p>
           </div>
           <div class="contact-card" aria-label="Contact details">
             <a class="contact-link booking-link" href="https://calendly.com/devvrat-nair/30min" target="_blank" rel="noreferrer">
@@ -355,12 +360,26 @@
 
     <footer class="site-footer">
       <p>&copy; 2026 Dragonfruit Technologies. Independent sole-proprietor consulting trade name of Devvrat Nair.</p>
-      <a href="#home">Back to top</a>
+      <div class="footer-actions">
+        <a href="privacy.html">Privacy</a>
+        <button class="text-button" type="button" data-privacy-settings hidden>Privacy settings</button>
+        <a href="#home">Back to top</a>
+      </div>
     </footer>
 
+    <section class="cookie-banner" aria-labelledby="privacy-choice-title" data-cookie-banner hidden>
+      <div>
+        <h2 id="privacy-choice-title" tabindex="-1">Your privacy choices</h2>
+        <p>HubSpot provides optional chat and visitor analytics. It loads only if you allow it.
+          Essential only keeps the site, email, phone, and booking links available.
+          <a href="privacy.html">Read our privacy notice</a>.</p>
+      </div>
+      <div class="privacy-actions">
+        <button class="button secondary" type="button" data-privacy-choice="essential">Essential only</button>
+        <button class="button primary" type="button" data-privacy-choice="optional">Allow chat &amp; analytics</button>
+      </div>
+    </section>
+    <noscript><p class="noscript-note">Email, phone, and booking links work without JavaScript. Chat and privacy settings require JavaScript.</p></noscript>
     <script src="script.js"></script>
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na3.hs-scripts.com/343398568.js"></script>
-    <!-- End of HubSpot Embed Code -->
   </body>
 </html>
